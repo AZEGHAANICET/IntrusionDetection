@@ -94,11 +94,6 @@ streamlit run app.py
     D -->|Téléchargement| F
 ```
 ---
-## 📸 Architecture Flow execution
-
-![Mermaid Architecture Flow execution](architecture_flow.png)
-
----
 
 ## 🛠 Fonctionnalités principales
 
