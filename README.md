@@ -80,7 +80,6 @@ streamlit run app.py
 ## 🔄 Pipeline de traitement
 
 ```mermaid
-flowchart TD
     A[📂 Données brutes (CSV / Entrée manuelle / Génération aléatoire)] --> B[⚙️ Prétraitement
 - Nettoyage
 - Normalisation (Scaler)
