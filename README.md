@@ -1,4 +1,4 @@
-```mardown # Détecteur d'Intrusions Réseau - Application Streamlit
+# Détecteur d'Intrusions Réseau - Application Streamlit
 
 ## 🚀 Présentation
 
@@ -20,7 +20,7 @@ intrusion_app/
 └── README.md                            # Ce fichier
 └── ML                                   (construction du Modèle)
 └── fichier fortigate_logs_dataset_Camtel.csv (Notre dataset)
-
+```
 
 ## 🛠 Fonctionnalités principales
 
@@ -64,13 +64,15 @@ python -m venv venv
 source venv/bin/activate
 # Windows
 venv\Scripts\activate
-
+```
 2. Installez les dépendances
-
+```bash
 pip install -r requirements.txt
-
+```
 3. Lancez l'application Streamlit
+```bash
 streamlit run app.py
+```
 
 
 
@@ -79,14 +81,26 @@ streamlit run app.py
 
 ```mermaid
 flowchart TD
-    A[📂 Données brutes\n(CSV / Entrée manuelle / Génération aléatoire)] --> B[⚙️ Prétraitement\n- Nettoyage\n- Normalisation (Scaler)\n- Extraction des features]
-    B --> C[🧠 Modèles ML / DL\n(Logistic Regression, Random Forest, LSTM...)]
-    C --> D[📊 Résultats prédits\n- Normal / Intrusion\n- Type d’attaque éventuelle]
-    D --> E[📈 Visualisation\n- Graphiques\n- Tableaux interactifs]
-    D --> F[📥 Export CSV\nTéléchargement des résultats]
+    A[📂 Données brutes (CSV / Entrée manuelle / Génération aléatoire)] --> B[⚙️ Prétraitement
+- Nettoyage
+- Normalisation (Scaler)
+- Extraction des features]
+    B --> C[🧠 Modèles ML / DL (Logistic Regression, Random Forest, LSTM...)]
+    C --> D[📊 Résultats prédits
+- Normal / Intrusion
+- Type d’attaque éventuelle]
+    D --> E[📈 Visualisation
+- Graphiques
+- Tableaux interactifs]
+    D --> F[📥 Export CSV
+- Téléchargement des résultats]
+```
+---
+## 📸 Architecture Flow execution
+
+![Mermaid Architecture Flow execution](architecture_flow.png)
 
 ---
-
 
 ## 🛠 Fonctionnalités principales
 
