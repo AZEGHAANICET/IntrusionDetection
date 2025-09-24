@@ -13,11 +13,11 @@ L'application est développée avec **Streamlit**, offrant une interface moderne
 
 ```intrusion_app/
 │
-├── models/ # Contient les modèles entraînés (.joblib et .h5)
-├── app.py # Application Streamlit principale
-├── requirements.txt # Dépendances Python
-└── README.md # Ce fichier
-└── ML (construction du Modèle)
+├── models/                              # Contient les modèles entraînés (.joblib et .h5)
+├── app.py                               # Application Streamlit principale
+├── requirements.txt                     # Dépendances Python
+└── README.md                            # Ce fichier
+└── ML                                   (construction du Modèle)
 └── fichier fortigate_logs_dataset_Camtel.csv (Notre dataset)
 
 
@@ -76,6 +76,18 @@ streamlit run app.py
 
 
 ---
+## 🔄 Pipeline de traitement
+
+```mermaid
+flowchart TD
+    A[📂 Données brutes\n(CSV / Entrée manuelle / Génération aléatoire)] --> B[⚙️ Prétraitement\n- Nettoyage\n- Normalisation (Scaler)\n- Extraction des features]
+    B --> C[🧠 Modèles ML / DL\n(Logistic Regression, Random Forest, LSTM...)]
+    C --> D[📊 Résultats prédits\n- Normal / Intrusion\n- Type d’attaque éventuelle]
+    D --> E[📈 Visualisation\n- Graphiques\n- Tableaux interactifs]
+    D --> F[📥 Export CSV\nTéléchargement des résultats]
+
+---
+
 
 ## 🛠 Fonctionnalités principales
 
@@ -92,15 +104,7 @@ streamlit run app.py
 
 ---
 
-## 🔄 Pipeline de traitement
 
-```mermaid
-flowchart TD
-    A[📂 Données brutes\n(CSV / Entrée manuelle / Génération aléatoire)] --> B[⚙️ Prétraitement\n- Nettoyage\n- Normalisation (Scaler)\n- Extraction des features]
-    B --> C[🧠 Modèles ML / DL\n(Logistic Regression, Random Forest, LSTM...)]
-    C --> D[📊 Résultats prédits\n- Normal / Intrusion\n- Type d’attaque éventuelle]
-    D --> E[📈 Visualisation\n- Graphiques\n- Tableaux interactifs]
-    D --> F[📥 Export CSV\nTéléchargement des résultats]
 
 
 
