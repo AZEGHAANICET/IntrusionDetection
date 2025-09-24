@@ -11,7 +11,7 @@ L'application est développée avec **Streamlit**, offrant une interface moderne
 
 ## 📁 Structure du projet
 
-intrusion_app/
+```intrusion_app/
 │
 ├── models/ # Contient les modèles entraînés (.joblib et .h5)
 ├── app.py # Application Streamlit principale
