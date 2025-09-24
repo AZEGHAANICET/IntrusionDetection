@@ -74,3 +74,33 @@ pip install -r requirements.txt
 streamlit run app.py
 
 
+
+---
+
+## 🛠 Fonctionnalités principales
+
+1. **Choix du modèle** : sélection parmi tous les modèles sauvegardés.  
+2. **Méthodes d'entrée** :  
+   - Upload d'un fichier CSV contenant les données brutes.  
+   - Entrée manuelle via la sidebar avec des descriptions pour guider l'utilisateur.  
+   - Génération aléatoire de données pour tester rapidement.  
+3. **Prédictions** :  
+   - Résultats affichés dans un tableau interactif.  
+   - Visualisation graphique de la distribution des prédictions.  
+   - Explications textuelles des comportements détectés.  
+4. **Téléchargement** : export des résultats au format CSV.  
+
+---
+
+## 🔄 Pipeline de traitement
+
+```mermaid
+flowchart TD
+    A[📂 Données brutes\n(CSV / Entrée manuelle / Génération aléatoire)] --> B[⚙️ Prétraitement\n- Nettoyage\n- Normalisation (Scaler)\n- Extraction des features]
+    B --> C[🧠 Modèles ML / DL\n(Logistic Regression, Random Forest, LSTM...)]
+    C --> D[📊 Résultats prédits\n- Normal / Intrusion\n- Type d’attaque éventuelle]
+    D --> E[📈 Visualisation\n- Graphiques\n- Tableaux interactifs]
+    D --> F[📥 Export CSV\nTéléchargement des résultats]
+
+
+
