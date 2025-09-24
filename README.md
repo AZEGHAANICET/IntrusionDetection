@@ -11,7 +11,8 @@ L'application est développée avec **Streamlit**, offrant une interface moderne
 
 ## 📁 Structure du projet
 
-```intrusion_app/
+```plaintext
+intrusion_app/
 │
 ├── models/                              # Contient les modèles entraînés (.joblib et .h5)
 ├── app.py                               # Application Streamlit principale
@@ -20,8 +21,6 @@ L'application est développée avec **Streamlit**, offrant une interface moderne
 └── ML                                   (construction du Modèle)
 └── fichier fortigate_logs_dataset_Camtel.csv (Notre dataset)
 
-
----
 
 ## 🛠 Fonctionnalités principales
 
