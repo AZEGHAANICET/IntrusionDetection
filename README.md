@@ -80,19 +80,18 @@ streamlit run app.py
 ## 🔄 Pipeline de traitement
 
 ```mermaid
-    A[📂 Données brutes (CSV / Entrée manuelle / Génération aléatoire)] --> B[⚙️ Prétraitement
-- Nettoyage
-- Normalisation (Scaler)
-- Extraction des features]
-    B --> C[🧠 Modèles ML / DL (Logistic Regression, Random Forest, LSTM...)]
-    C --> D[📊 Résultats prédits
-- Normal / Intrusion
-- Type d’attaque éventuelle]
-    D --> E[📈 Visualisation
-- Graphiques
-- Tableaux interactifs]
-    D --> F[📥 Export CSV
-- Téléchargement des résultats]
+ flowchart TD
+    A[📂 Données brutes] --> B[⚙️ Prétraitement]
+    B --> C[🧠 Modèles ML/DL]
+    C --> D[📊 Résultats prédits]
+    D --> E[📈 Visualisation]
+    D --> F[📥 Export CSV]
+    
+    A -->|CSV / Manuel / Aléatoire| B
+    B -->|Nettoyage / Normalisation| C
+    C -->|Prédictions| D
+    D -->|Graphiques / Tableaux| E
+    D -->|Téléchargement| F
 ```
 ---
 ## 📸 Architecture Flow execution
