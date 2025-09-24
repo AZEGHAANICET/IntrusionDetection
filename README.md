@@ -1,4 +1,4 @@
-# Détecteur d'Intrusions Réseau - Application Streamlit
+```mardown # Détecteur d'Intrusions Réseau - Application Streamlit
 
 ## 🚀 Présentation
 
